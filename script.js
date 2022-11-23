@@ -7,6 +7,7 @@ addBtn.addEventListener("click", addToList);
 List.addEventListener("click", deleteCheck);
 // filterOption.addEventListener('click',filter_toDo)
 function addToList(event) {
+    event.preventDefault();
     // prevent user to add empty value 
     if(input.value==""){
         alert("empty");
